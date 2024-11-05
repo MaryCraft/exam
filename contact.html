@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КОНТАКТЫ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Культура Японии</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="art.html">Искусство</a></li>
+                
+                <li><a href="food.html">Еда</a></li>
+                <li><a href="Traditions.html">Традиции</a></li>
+                <li><a href="contact.html" class="active">Контакты</a></li>
+                <li><a href="abc.html">Задача 1</a></li>
+                <li><a href="Abc2.html">Задача 2</a></li>
+                <li><a href="passport.html">Паспорт</a></li>
+                <li><a href="passport2.html" >Обработка по событию</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Оставьте свои контактные данные, чтобы получать новости о самых ярких культурных событиях Японии.</h3>
+        <form action="https://www.bing.com/search?" method="POST">
+           <p> <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required> </p>
+            
+           <p> <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="surname" required> </p>
+
+            <p> <label for="group">Группа:</label>
+            <input type="text" id="group" name="group" required> </p>
+            
+            <p> <label for="phone">Мобильный телефон:</label>
+            <input type="tel" id="phone" name="phone" required> </p>
+            
+            <p> <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required> </p>
+            
+            <p> <label for="date">Дата отправки:</label>
+            <input type="date" id="date" name="date" required> </p>
+            
+            <p> <input type="submit" value="Отправить"> </p>
+        </form>
+        
+        <h3>Пожалуйста, оставьте свой отзыв о материлах на сайте.</h3>
+        <form action="https://www.bing.com/search?" method="POST">
+            <p> <label for="feedback">Ваш отзыв:</label>
+            <textarea id="feedback" name="feedback" required></textarea> </p>
+            
+            <p> <label for="rating">Насколько представленная информация была для вас полезна? (1-абсолютно безполезна/5-очень полезна):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required> </p>
+            
+           <p> <label>Какой раздел вы бы хотели видеть на сайте?</label>
+            <input type="radio" id="option1" name="preference" value="option1">
+            <label for="option1">Рецепты японских блюд</label>
+            <input type="radio" id="option2" name="preference" value="option2">
+            <label for="option2">Японская литература</label></p>
+            
+           <p> <label for="subscribe">Подписаться на новости:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes"> </p>
+
+            <p>Войти в личный кабинет: <input type="password" name="password"  value="12345"> </p>
+            
+            <p> <input type="hidden" name="source" value="contact_form">
+            <input type="submit" value="Отправить"> </p>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Культура Японии</p>
+    </footer>
+</body>
+</html>
